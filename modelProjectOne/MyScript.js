@@ -4,7 +4,9 @@ function hello(){
 }
 function forma() {
     form.classList.add("displalist");
+    form.classList.add("none");
 }
 function closeWindow() {
     form.classList.remove("displalist");
+    form.classList.remove("none");
 }
