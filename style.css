@@ -1,0 +1,21 @@
+*{
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.body{
+    width: 700px;
+    height: 900px;
+}
+.textTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25;
+    text-align: start;
+}
+.text{
+    margin: 15;
+    font-family: 'Montserrat';
+    font-size: 20;
+    text-align: start;
+    font: 900;
+}
