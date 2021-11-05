@@ -21,13 +21,12 @@ let secondNumber = "";
 let operator;
 let x = 0;
 let numbers = [];
+let stringLength;
 function resetClick() {
     document.getElementById("screen").textContent = "";
 }
 function removeClick() {
-    numbers.pop();
-    x = numbers.length - 1;
-    document.getElementById("screen").textContent = numbers[x];
+    document.getElementById("screen").textContent = document.getElementById("screen").textContent.substring(0, document.getElementById("screen").textContent.length - 1);
 }
 function oneClick() {
     document.getElementById("screen").textContent += "1";
@@ -69,9 +68,22 @@ function zeroClick() {
     document.getElementById("screen").textContent += "0";
     numbers.push(document.getElementById("screen").textContent);
 }
+function contains(a, obj) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
 function pointClick() {
-    document.getElementById("screen").textContent += ".";
-    numbers.push(document.getElementById("screen").textContent);
+    if(contains(document.getElementById("screen").textContent,".") === true ){
+        
+    }
+    else{
+        document.getElementById("screen").textContent += ".";
+        numbers.push(document.getElementById("screen").textContent);
+    }
 }
 function plusClick() {
     firstNumber = document.getElementById("screen").textContent;
@@ -112,4 +124,16 @@ function equalsClick() {
     else if(operator === 4){
         document.getElementById("screen").textContent = firstNumber / secondNumber;
     }
+    operator = 0;
+}
+function randomNumbers(){
+    let rand = [0,0,0,0,0];
+    for(let x = 0;x<5;x++){
+        rand[x] = Math.floor((Math.random() * 100) - 50);
+    }
+    for(x = 0; x < 5;x++){
+        if (rand[x]<0) {
+            console.log("Number "+ (x+1) +" = " + rand[x]);
+        }
+    }    
 }
