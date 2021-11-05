@@ -2,11 +2,14 @@
     display: block;
     box-sizing: border-box; /*opacity: 0; = невидимість*/
 }
+title{
+    display: none;
+}
 body{
     width: 100vh;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
     background-color: brown;
 }
@@ -19,6 +22,12 @@ body{
     border: 2px solid coral;
     border-radius: 5px;
     background-color: black;
+}
+.calculator{
+    height: 668px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 button{
     width: 166px;
