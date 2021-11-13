@@ -13,6 +13,17 @@ img{
     height: auto;
     border: 10px solid black;;
 }
+.div{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
 button{
-    cursor: pointer;
+    margin: 10px;
+    cursor: grabbing;
+    width: 290px;
+    height: 30px;
+    background-color: lightseagreen;
+    color: darkslategrey;
+    font-size: 20;
 }
