@@ -1,0 +1,18 @@
+body{
+    width: 100vh;
+    height: auto;
+}
+.slider{
+    width: 50%;
+    margin: 5%;
+    position: relative;
+}
+img{
+    width: 600px;
+    max-width: 200%;
+    height: auto;
+    border: 10px solid black;;
+}
+button{
+    cursor: pointer;
+}
