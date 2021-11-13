@@ -1,6 +1,6 @@
 document.getElementById("left").addEventListener("click", leftClick);
 document.getElementById("right").addEventListener("click", rightClick);
-let imagesList = ["./images/завантаження (1).jpg","./images/завантаження.jpg","./images/roughing-it-in-an-rv.jpg","./images/TowerB.jpg","./images/TDS.jpg","./images/escapist.jpg"];
+let imagesList = ["./завантаження (1).jpg","./завантаження.jpg","./roughing-it-in-an-rv.jpg","./TowerB.jpg","./TDS.jpg","./escapist.jpg"];
 let i = 0;
 function leftClick() {
     if(i <= imagesList.length && i > 0){
